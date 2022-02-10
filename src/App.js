@@ -10,7 +10,7 @@ const App = () => {
       name: "Frontend",
     },
   ];
-  const [courses, setCourses] = useState(INIT_COURSES);
+  const [courses, setCourses] = useState(INIT_COURSES); // uzycie REACT HOOK
 
   // UPDATE
   const addCourse = (e) => {
@@ -20,6 +20,9 @@ const App = () => {
     const newCourse = { id: uuidv4(), name: name.value };
 
     setCourses((state) => [...state, newCourse]);
+  };
+  const deleteCourse = (courseId) => {
+    setCourses((state) => state.filter(({ id }) => id !== courseId));
   };
 
   return (
@@ -33,7 +36,10 @@ const App = () => {
         </form>
         <ul>
           {courses.map(({ id, name }) => (
-            <li key={id}>name: {name}</li>
+            <li key={id}>
+              name: {name}{" "}
+              <button onClick={(e) => deleteCourse(id)}>delete</button>
+            </li>
           ))}
         </ul>
       </header>
