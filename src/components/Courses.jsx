@@ -36,7 +36,11 @@ const Courses = () => {
     <>
       <Header title={"Courses"} />
       <CoursesForm addCourse={addCourse} />
-      <CoursesList courses={courses} deleteCourse={deleteCourse} />
+      <CoursesList
+        courses={courses}
+        deleteCourse={deleteCourse}
+        isOrdered={true}
+      />
     </>
   );
 };
