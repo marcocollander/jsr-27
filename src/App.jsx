@@ -1,19 +1,23 @@
 import "./App.css";
-import People from "./components/People";
-import Courses from "./components/Courses";
-import Text from "./components/Text";
-import Form from "./components/form/Form";
+// import People from "./components/People";
+// import Courses from "./components/Courses";
+// import Text from "./components/Text";
+// import Form from "./components/form/Form";
 import Currencies from "./components/Currencies/Currencies";
+// import CounterClass from "./components/CounterClass";
+// import LoadingClass from "./components/LoadingClass";
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
+        {/* <CounterClass />
+        <LoadingClass /> */}
         <Currencies />
-        <Form />
+        {/* <Form />
         <Text text={"Hello, world"} />
         <People />
-        <Courses />
+        <Courses /> */}
       </header>
     </div>
   );
