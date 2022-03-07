@@ -1,19 +1,14 @@
 import "./App.css";
-// import People from "./components/People";
-// import Courses from "./components/Courses";
-// import Text from "./components/Text";
-// import Form from "./components/form/Form";
-import Currencies from "./components/Currencies/Currencies";
-// import CounterClass from "./components/CounterClass";
-// import LoadingClass from "./components/LoadingClass";
+import ChuckFn from "./components/ChuckFn";
 
 const App = () => {
   return (
     <div className="App">
       <header className="App-header">
+        <ChuckFn />
         {/* <CounterClass />
         <LoadingClass /> */}
-        <Currencies />
+        {/* <Currencies /> */}
         {/* <Form />
         <Text text={"Hello, world"} />
         <People />
